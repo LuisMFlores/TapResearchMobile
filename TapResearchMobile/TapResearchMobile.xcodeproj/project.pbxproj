@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		AB955D512683E4F300FD6B4E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB955D502683E4F300FD6B4E /* AppDelegate.m */; };
 		AB955D542683E4F300FD6B4E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB955D532683E4F300FD6B4E /* SceneDelegate.m */; };
-		AB955D572683E4F400FD6B4E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB955D562683E4F400FD6B4E /* ViewController.m */; };
-		AB955D5A2683E4F400FD6B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB955D582683E4F400FD6B4E /* Main.storyboard */; };
 		AB955D5C2683E4F900FD6B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB955D5B2683E4F900FD6B4E /* Assets.xcassets */; };
 		AB955D5F2683E4F900FD6B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB955D5D2683E4F900FD6B4E /* LaunchScreen.storyboard */; };
 		AB955D622683E4F900FD6B4E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB955D612683E4F900FD6B4E /* main.m */; };
@@ -22,9 +20,6 @@
 		AB955D502683E4F300FD6B4E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AB955D522683E4F300FD6B4E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		AB955D532683E4F300FD6B4E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AB955D552683E4F300FD6B4E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB955D562683E4F400FD6B4E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AB955D592683E4F400FD6B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB955D5B2683E4F900FD6B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB955D5E2683E4F900FD6B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB955D602683E4F900FD6B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,19 +56,56 @@
 		AB955D4E2683E4F300FD6B4E /* TapResearchMobile */ = {
 			isa = PBXGroup;
 			children = (
+				AB955D6B2683E53E00FD6B4E /* Resources */,
+				AB955D692683E53200FD6B4E /* Classes */,
+				AB955D602683E4F900FD6B4E /* Info.plist */,
+			);
+			path = TapResearchMobile;
+			sourceTree = "<group>";
+		};
+		AB955D692683E53200FD6B4E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB955D702683E61500FD6B4E /* Managers */,
+				AB955D6F2683E60D00FD6B4E /* Models */,
+				AB955D6A2683E53B00FD6B4E /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB955D6A2683E53B00FD6B4E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AB955D5D2683E4F900FD6B4E /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AB955D6B2683E53E00FD6B4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				AB955D4F2683E4F300FD6B4E /* AppDelegate.h */,
 				AB955D502683E4F300FD6B4E /* AppDelegate.m */,
 				AB955D522683E4F300FD6B4E /* SceneDelegate.h */,
 				AB955D532683E4F300FD6B4E /* SceneDelegate.m */,
-				AB955D552683E4F300FD6B4E /* ViewController.h */,
-				AB955D562683E4F400FD6B4E /* ViewController.m */,
-				AB955D582683E4F400FD6B4E /* Main.storyboard */,
-				AB955D5B2683E4F900FD6B4E /* Assets.xcassets */,
-				AB955D5D2683E4F900FD6B4E /* LaunchScreen.storyboard */,
-				AB955D602683E4F900FD6B4E /* Info.plist */,
 				AB955D612683E4F900FD6B4E /* main.m */,
+				AB955D5B2683E4F900FD6B4E /* Assets.xcassets */,
 			);
-			path = TapResearchMobile;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB955D6F2683E60D00FD6B4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB955D702683E61500FD6B4E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +166,6 @@
 			files = (
 				AB955D5F2683E4F900FD6B4E /* LaunchScreen.storyboard in Resources */,
 				AB955D5C2683E4F900FD6B4E /* Assets.xcassets in Resources */,
-				AB955D5A2683E4F400FD6B4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB955D572683E4F400FD6B4E /* ViewController.m in Sources */,
 				AB955D512683E4F300FD6B4E /* AppDelegate.m in Sources */,
 				AB955D622683E4F900FD6B4E /* main.m in Sources */,
 				AB955D542683E4F300FD6B4E /* SceneDelegate.m in Sources */,
@@ -155,14 +185,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB955D582683E4F400FD6B4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AB955D592683E4F400FD6B4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AB955D5D2683E4F900FD6B4E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
